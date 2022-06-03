@@ -1,0 +1,25 @@
+{% extends "appNM/padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+
+    <h1>Cursos</h1>
+    <p>Info de los cursos:</p>
+    
+    {% if cursos %}
+
+    <ul>
+	{% for curso in cursos %}
+		<li> {{curso.nombre}} </li>
+		<li> {{curso.camada}} </li>
+	{% endfor %}
+
+    </ul>
+
+    {% endif %}
+
+
+
+{% endblock %}

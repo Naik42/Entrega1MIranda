@@ -1,0 +1,31 @@
+{% extends "appNM/padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+
+    <h1>Cursos</h1>
+    <p>Info de los cursos:</p>
+    
+    
+
+
+    <p>Puede cargar cursos:</p>
+
+
+    <form action="nuevocurso" method="post"> {% csrf_token %}
+
+        <p>Curso: <input type="text"  name="curso"></p>
+    
+        <p>Camada: <input type="number" name="camada"></p>
+    
+        <input type="submit"    value="Cargar">
+    
+        </form>
+      
+
+   
+
+
+{% endblock %}

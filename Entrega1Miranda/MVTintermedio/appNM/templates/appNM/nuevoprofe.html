@@ -1,0 +1,31 @@
+{% extends "appNM/padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+
+    <h1>Profesores</h1>
+    <p>Info de los Profesores:</p>
+    
+    
+
+
+    <p>Puede cargar profesores:</p>
+
+
+    <form action="nuevoprofe" method="POST"> {% csrf_token %}
+
+        <p>Nombre: <input type="text"  name="curso"></p>
+    
+        <p>Apellido: <input type="text" name="apellido"></p>
+    
+        <input type="submit"    value="Cargar">
+    
+        </form>
+      
+
+   
+
+
+{% endblock %}
